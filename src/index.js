@@ -2,15 +2,15 @@ import React from "react";
 import ReactDOM from "react-dom";
 import "./index.css";
 import App from "./App";
-import Theme from "./providers/ThemeProvider";
 
 import reportWebVitals from "./reportWebVitals";
+import Providers from "./providers";
 
 ReactDOM.render(
   <React.StrictMode>
-    <Theme>
+    <Providers>
       <App />
-    </Theme>
+    </Providers>
   </React.StrictMode>,
   document.getElementById("root")
 );

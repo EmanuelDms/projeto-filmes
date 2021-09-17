@@ -1,4 +1,4 @@
-import { ThemeProvider } from '@material-ui/styles';
+import { ThemeProvider } from '@material-ui/core';
 import theme from './theme';
 
 export default function Theme({ children }) {
