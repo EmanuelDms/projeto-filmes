@@ -8,6 +8,7 @@ export default function Routes() {
       <Header />
       <Switch>
         <Route exact path="/" component={Home} />
+        <Route exact path="/favoritos" />
       </Switch>
     </Router>
   );
