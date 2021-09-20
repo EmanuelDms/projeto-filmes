@@ -6,7 +6,7 @@ export default function Helmet({ title }) {
   return (
     <Provider>
       <Head>
-        <meta name="theme-color" content={theme.palette.common.black} />
+        <meta name="theme-color" content={theme.palette.primary.main} />
         <title>Filmes</title>
       </Head>
     </Provider>
