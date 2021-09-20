@@ -1,13 +1,15 @@
 import { makeStyles } from "@material-ui/core";
 
 const useStyles = makeStyles((theme) => ({
-  container: {
+  appBar: {
     background: `linear-gradient(0deg, ${theme.palette.primary.dark} 0%, ${theme.palette.primary.main} 50%, ${theme.palette.primary.light} 100%)`,
-    height: "7vh",
   },
   title: {
+    flexGrow: 1,
     "& > h4": {
       color: theme.palette.getContrastText(theme.palette.primary.main),
+      fontFamily: 'Times New Roman',
+      fontWeight: theme.typography.fontWeightBold
     },
   },
   saved: {
