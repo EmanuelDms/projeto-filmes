@@ -1,7 +1,7 @@
 import { useTheme } from '@material-ui/core';
 import { Helmet as Head, HelmetProvider as Provider } from 'react-helmet-async';
 
-export default function Helmet({ title }) {
+export default function Helmet() {
   const theme = useTheme();
   return (
     <Provider>
