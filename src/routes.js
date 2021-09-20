@@ -1,6 +1,7 @@
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import Header from "./components/Header";
 import Home from "./pages/Home";
+import Favoritos from "./pages/Favoritos";
 
 export default function Routes() {
   return (
@@ -8,7 +9,7 @@ export default function Routes() {
       <Header />
       <Switch>
         <Route exact path="/" component={Home} />
-        <Route exact path="/favoritos" />
+        <Route exact path="/favoritos" component={Favoritos} />
       </Switch>
     </Router>
   );
