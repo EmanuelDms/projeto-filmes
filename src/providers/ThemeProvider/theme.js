@@ -10,6 +10,7 @@ const theme = createTheme({
     },
   },
   typography: {
+    fontFamily: "'Open Sans', sans-serif",
     h1: {
       display: "block",
       fontSize: "2rem",
