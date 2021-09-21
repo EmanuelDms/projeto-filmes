@@ -1,24 +1,24 @@
-import { makeStyles } from "@material-ui/core";
+import { makeStyles } from '@material-ui/core';
 
 const useStyles = makeStyles((theme) => ({
   appBar: {
     background: `linear-gradient(0deg, ${theme.palette.primary.dark} 0%, ${theme.palette.primary.main} 50%, ${theme.palette.primary.light} 100%)`,
   },
   toolbar: {
-    justifyContent: "space-between"
+    justifyContent: 'space-between',
   },
   title: {
-    "& > h4": {
+    '& > h4': {
       color: theme.palette.getContrastText(theme.palette.primary.main),
       fontFamily: "'Times New Roman', sans-serif",
-      fontWeight: theme.typography.fontWeightBold
+      fontWeight: theme.typography.fontWeightBold,
     },
   },
   saved: {
-    "& > button": {
+    '& > button': {
       fontWeight: theme.typography.fontWeightBold,
       backgroundColor: theme.palette.getContrastText(
-        theme.palette.common.black
+        theme.palette.common.black,
       ),
     },
   },

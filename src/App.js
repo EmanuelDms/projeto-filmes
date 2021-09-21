@@ -1,8 +1,7 @@
-import { Box, Grid } from "@material-ui/core";
-import Routes from "./routes";
+import { Box, Grid } from '@material-ui/core';
+import Routes from './routes';
 
 function App() {
-
   return (
     <Box sx={{ flexGrow: 1 }}>
       <Grid container>

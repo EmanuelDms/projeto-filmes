@@ -1,5 +1,5 @@
-import Helmet from "./Helmet";
-import Theme from "./ThemeProvider";
+import Helmet from './Helmet';
+import Theme from './ThemeProvider';
 
 export default function Providers({ children }) {
   return (
@@ -7,5 +7,5 @@ export default function Providers({ children }) {
       <Helmet />
       {children}
     </Theme>
-  )
+  );
 }

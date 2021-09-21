@@ -1,11 +1,10 @@
-import { makeStyles } from "@material-ui/core";
-
+import { makeStyles } from '@material-ui/core';
 
 const useStyles = makeStyles((theme) => ({
   moviesContainer: {
-    direction: "column",
-    alignItems: "center",
-    justifyContent: "center",
+    direction: 'column',
+    alignItems: 'center',
+    justifyContent: 'center',
     backgroundColor: theme.palette.background.paper,
   },
   movieItemContainer: {
@@ -21,20 +20,20 @@ const useStyles = makeStyles((theme) => ({
     color: theme.palette.getContrastText(theme.palette.background.default),
     '& h1': {
       marginTop: 0,
-      textAlign: 'center'
+      textAlign: 'center',
     },
     '& strong': {
-      fontWeight: theme.typography.fontWeightBold
+      fontWeight: theme.typography.fontWeightBold,
     },
     '& a': {
-      color: theme.palette.getContrastText(theme.palette.background.default)
+      color: theme.palette.getContrastText(theme.palette.background.default),
     },
 
     '& img, &': {
       [theme.breakpoints.down('sm')]: {
         width: '100vw',
         borderRadius: 0,
-      }
+      },
     },
     '& button': {
       borderTopLeftRadius: 0,
@@ -43,14 +42,14 @@ const useStyles = makeStyles((theme) => ({
         borderTopLeftRadius: theme.shape.borderRadius,
         borderTopRightRadius: theme.shape.borderRadius,
         width: '100vw',
-        marginTop: theme.spacing(2)
-      }
+        marginTop: theme.spacing(2),
+      },
     },
     '& img': {
       borderTopLeftRadius: theme.shape.borderRadius,
-      borderTopRightRadius: theme.shape.borderRadius
-    }
-  }
+      borderTopRightRadius: theme.shape.borderRadius,
+    },
+  },
 }));
 
 export default useStyles;

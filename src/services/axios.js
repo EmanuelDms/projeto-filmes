@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const baseURL = "https://sujeitoprogramador.com/";
+const baseURL = 'https://sujeitoprogramador.com/';
 
 // ALL DEFAULT CONFIGURATION HERE
 
