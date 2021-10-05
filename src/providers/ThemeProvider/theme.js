@@ -2,15 +2,13 @@ import { createTheme } from '@material-ui/core';
 
 const theme = createTheme({
   palette: {
-    background: {
-      default: '#000',
-    },
     primary: {
       main: '#A52A2A',
     },
   },
   typography: {
     fontFamily: "'Open Sans', sans-serif",
+    fontWeightMedium: 600,
     h1: {
       display: 'block',
       fontSize: '2rem',

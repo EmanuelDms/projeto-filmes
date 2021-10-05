@@ -7,13 +7,16 @@ import {
   Box,
 } from '@material-ui/core';
 import useStyles from './styles';
+import useGeneralStyles from '../styles';
+
 import { Link } from 'react-router-dom';
 import movieRepository from '../../repositories/MovieRepository';
 
 export default function Home() {
   const [movies, setMovies] = useState([]);
-  const [loading, setLoading] = useState(0);
+  const [loading, setLoading] = useState(false);
   const classes = useStyles();
+  const { moviesContainer } = useGeneralStyles();
 
   useEffect(() => {
     async function loadMovies() {
@@ -26,7 +29,7 @@ export default function Home() {
   }, []);
 
   return (
-    <Grid item container className={classes.moviesContainer}>
+    <Grid item container className={moviesContainer}>
       {!loading ? (
         movies.map((movie) => {
           return (

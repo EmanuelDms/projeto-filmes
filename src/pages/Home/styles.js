@@ -1,12 +1,6 @@
 import { makeStyles } from '@material-ui/core';
 
 const useStyles = makeStyles((theme) => ({
-  moviesContainer: {
-    direction: 'column',
-    alignItems: 'center',
-    justifyContent: 'center',
-    backgroundColor: theme.palette.background.paper,
-  },
   movieItemContainer: {
     margin: theme.spacing(2),
     display: 'flex',
@@ -16,8 +10,8 @@ const useStyles = makeStyles((theme) => ({
 
     padding: theme.spacing(1.875),
     borderRadius: theme.shape.borderRadius,
-    backgroundColor: theme.palette.background.default,
-    color: theme.palette.getContrastText(theme.palette.background.default),
+    backgroundColor: theme.palette.common.black,
+    color: theme.palette.getContrastText(theme.palette.common.black),
     '& h1': {
       marginTop: 0,
       textAlign: 'center',
@@ -26,7 +20,7 @@ const useStyles = makeStyles((theme) => ({
       fontWeight: theme.typography.fontWeightBold,
     },
     '& a': {
-      color: theme.palette.getContrastText(theme.palette.background.default),
+      color: theme.palette.getContrastText(theme.palette.common.black),
     },
 
     '& img, &': {
@@ -43,6 +37,13 @@ const useStyles = makeStyles((theme) => ({
         borderTopRightRadius: theme.shape.borderRadius,
         width: '100vw',
         marginTop: theme.spacing(2),
+      },
+      padding: 0,
+      '& a': {
+        padding: `${theme.spacing(0.75)}px ${theme.spacing(2)}px`,
+        width: '100%',
+        height: '100%',
+        fontWeight: theme.typography.fontWeightMedium,
       },
     },
     '& img': {

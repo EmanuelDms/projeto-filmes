@@ -5,6 +5,9 @@ const movieRepository = {
   get() {
     return axios.get(resource);
   },
+  getMovie(id) {
+    return axios.get(`${resource}/${id}`);
+  },
 };
 
 export default movieRepository;
